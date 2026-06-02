@@ -1,0 +1,94 @@
+<div id="start-container" class="welcome-overlay">
+    <div class="city-shell">
+        <header class="city-header">
+            <div class="city-brand">
+                <div class="logo-wrapper">
+                    <img src="Image.png" alt="Логотип Житомира" class="dash-logo" onerror="this.style.display='none'">
+                </div>
+
+                <div class="dash-titles">
+                    <span class="city-kicker">Житомирська міська громада</span>
+                    <h1>Контактний центр м. Житомира</h1>
+                    <p>Єдина система моніторингу інфраструктурних проблем</p>
+                </div>
+            </div>
+
+            <div class="dash-top-right">
+                <button id="user-auth-btn" class="btn-profile">Авторизація</button>
+                <button id="user-cabinet-btn" class="btn-profile" style="display:none;">Особистий кабінет</button>
+                <button id="user-logout-btn" class="btn-profile logout-btn" style="display:none;">Вийти</button>
+            </div>
+        </header>
+
+        <main class="dashboard-card municipal-card">
+            <section class="hero-panel">
+                <div>
+                    <span class="section-eyebrow">Цифровий сервіс громади</span>
+                    <h2>Повідомляйте про проблеми міської інфраструктури онлайн</h2>
+                    <p>
+                        Оберіть точку на мапі, додайте опис проблеми та відстежуйте стан її опрацювання
+                        у відкритому реєстрі або власному кабінеті.
+                    </p>
+                </div>
+
+                <div class="hero-actions">
+                    <button id="map-link" class="btn-1551 primary-1551">Відкрити мапу звернень</button>
+                    <button id="list-link" class="btn-1551 secondary-1551">Реєстр проблем</button>
+                </div>
+            </section>
+
+            <section class="dash-grid">
+                <div class="dash-stats-col">
+                    <div class="resolved-widget service-widget">
+                        <h3>Статус виконання заявок</h3>
+
+                        <div class="progress-info">
+                            <span id="resolved-text" class="status-done">0 вирішено</span>
+                            <span id="total-text" class="status-total">з 0 загалом (0%)</span>
+                        </div>
+
+                        <div class="progress-bg">
+                            <div id="resolved-progress" class="progress-fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="chart-container">
+                        <canvas id="welcomeChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="dash-actions-col">
+                    <div class="info-board">
+                        <h3>Категорії звернень</h3>
+
+                        <div class="category-grid">
+                            <span>Пошкодження від прильотів</span>
+                            <span>Дороги / Ями</span>
+                            <span>Освітлення</span>
+                            <span>Сміття</span>
+                            <span>Водоканал</span>
+                            <span>Інше</span>
+                        </div>
+                    </div>
+
+                    <div class="news-widget">
+                        <h3>Новини нашого міста</h3>
+
+                        <ul class="news-list" id="dashboard-news-list">
+                            <li>
+                                <span class="news-date">Сьогодні</span>
+                                <span>Завершення реконструкції скверу на Польовій.</span>
+                            </li>
+                            <li>
+                                <span class="news-date">Вчора</span>
+                                <span>Зміни у графіку руху комунального транспорту.</span>
+                            </li>
+                        </ul>
+
+                        <button id="all-news-link" class="btn-1551 secondary-1551 small-action">Переглянути всі новини</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>

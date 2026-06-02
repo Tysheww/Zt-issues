@@ -1,0 +1,75 @@
+<div id="list-view" style="display:none;">
+    <div class="list-shell">
+        <div class="list-header municipal-list-header">
+            <div>
+                <span class="section-eyebrow">Реєстр громади</span>
+                <h2 id="list-title">Реєстр звернень</h2>
+                <p id="list-subtitle" class="list-subtitle">Відкритий перелік інфраструктурних проблем міста</p>
+            </div>
+
+            <div class="list-controls">
+                <select id="cabinet-filter" class="sort-dropdown cabinet-filter" style="display:none;">
+                    <option value="my">Мої звернення</option>
+                    <option value="followed">Відстежувані</option>
+                </select>
+
+                <select id="filter-category" class="sort-dropdown">
+                    <option value="all">Всі категорії</option>
+                    <option value="Пошкодження від прильотів">Пошкодження від прильотів</option>
+                    <option value="Дороги / Ями">Дороги / Ями</option>
+                    <option value="Освітлення">Освітлення</option>
+                    <option value="Сміття">Сміття</option>
+                    <option value="Водоканал">Водоканал</option>
+                    <option value="Інше">Інше</option>
+                </select>
+
+                <input type="text" id="search-input" class="sort-dropdown search-field" placeholder="Пошук - опис, адреса...">
+
+                <button id="list-back-btn" class="back-btn" onclick="showScreen('menu')">Повернутися</button>
+            </div>
+        </div>
+
+        <div class="dashboard stat-dashboard">
+            <div class="stat-card">
+                <span class="stat-label">Всього звернень</span>
+                <span class="stat-value" id="total-count">0</span>
+            </div>
+
+            <div class="stat-card urgent">
+                <span class="stat-label">Нові - в очікуванні</span>
+                <span class="stat-value" id="new-count">0</span>
+            </div>
+
+            <div class="stat-card success">
+                <span class="stat-label">Успішно вирішено</span>
+                <span class="stat-value" id="resolved-count">0</span>
+            </div>
+        </div>
+
+        <ul id="issues-list"></ul>
+    </div>
+</div>
+
+ dashboard.html
+  list.html
+  map.html
+  modals.html
+  news.html
+js
+  auth.js
+  config.js
+  dashboard.js
+  firebase.js
+  htmlLoader.js
+  issues.js
+  loader.js
+  main.js
+  map.js
+  state.js
+  ui.js
+  utils.js
+404.html
+General.png
+Image.png
+index.html
+style.css

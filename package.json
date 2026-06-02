@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@dataconnect/generated": "file:src/dataconnect-generated",
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "firebase": "^12.13.0",
+    "nodemailer": "^8.0.7"
+  }
+}
